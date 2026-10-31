@@ -5,7 +5,7 @@ A live spectrogram viewer and logger for the STFT output streamed by the firmwar
 | File | Purpose |
 |---|---|
 | `stft_datalogger_app.py` | GUI application (run this) |
-| `stft_backend_v3.py` | Packet parser, F32/Q15/Q31 conversion, serial reader, CSV/XLSX logger. The app imports it by this name, so keep both files in the same folder. |
+| `datalogger_backend.py` | Packet parser, F32/Q15/Q31 conversion, serial reader, CSV/XLSX logger. The app imports it by this name, so keep both files in the same folder. |
 
 ## Install and run
 ```
