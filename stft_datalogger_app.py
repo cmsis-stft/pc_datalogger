@@ -19,7 +19,7 @@ import pyqtgraph.exporters  # noqa: F401
 from pyqtgraph.Qt import QtCore, QtGui, QtWidgets
 from serial.tools import list_ports
 
-from stft_backend_v3 import (
+from datalogger_backend import (
     DEFAULT_STOP_HEX,
     DEFAULT_SYNC_HEX,
     HAS_OPENPYXL,
