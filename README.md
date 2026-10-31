@@ -4,8 +4,8 @@ A live spectrogram viewer and logger for the STFT output streamed by the firmwar
 
 | File | Purpose |
 |---|---|
-| `stft_datalogger_app.py` | GUI application (run this) |
-| `datalogger_backend.py` | Packet parser, F32/Q15/Q31 conversion, serial reader, CSV/XLSX logger. The app imports it by this name, so keep both files in the same folder. |
+| [stft_datalogger_app.py](https://github.com/cmsis-stft/pc_datalogger/blob/main/stft_datalogger_app.py) | GUI application (run this) |
+| [datalogger_backend.py](https://github.com/cmsis-stft/pc_datalogger/blob/main/datalogger_backend.py) | Packet parser, F32/Q15/Q31 conversion, serial reader, CSV/XLSX logger. The app imports it by this name, so keep both files in the same folder. |
 
 ## Install and run
 ```
@@ -17,4 +17,4 @@ python stft_datalogger_app.py
 2. Logging to CSV starts automatically. On the firmware's stop marker it writes `<name>_stft.csv`, `<name>_metadata.csv` and `<name>.xlsx`.
 3. Enter the STFT settings (sample rate, window length and type, overlap) in the app. They are saved to the metadata sheet.
 
-The `.xlsx` file is the input to `../cmsis-stft_matlab/MATLAB_STFT_Verify.m`.
+The `.xlsx` file is the input to [cmsis-stft_matlab/MATLAB_STFT_Verify.m](https://github.com/cmsis-stft/cmsis-stft_matlab/MATLAB_STFT_Verify.m).
