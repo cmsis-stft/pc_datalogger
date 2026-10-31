@@ -17,4 +17,4 @@ python stft_datalogger_app.py
 2. Logging to CSV starts automatically. On the firmware's stop marker it writes `<name>_stft.csv`, `<name>_metadata.csv` and `<name>.xlsx`.
 3. Enter the STFT settings (sample rate, window length and type, overlap) in the app. They are saved to the metadata sheet.
 
-The `.xlsx` file is the input to `../matlab/V3_MATLAB_Native_STFT_verify.m`.
+The `.xlsx` file is the input to `../cmsis-stft_matlab/MATLAB_STFT_Verify.m`.
